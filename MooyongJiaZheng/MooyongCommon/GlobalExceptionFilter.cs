@@ -34,12 +34,12 @@ namespace MooyongCommon
 
             if (_hostingEnvironment.IsDevelopment())
             {
-                var json = new {flag = "0", message = context.Exception.Message };
+                var json = new ApiResult().SetFailedResult("0", context.Exception.Message);
                 result.Content = JsonConvert.SerializeObject(json);
             }
             else
             {
-                var json = new { flag = "0", message = "抱歉，出错了~" };
+                var json = new ApiResult().SetFailedResult("0", "抱歉，出错了！");
                 result.Content = JsonConvert.SerializeObject(json);
             }
             ApiLogger.Info(result.Content);

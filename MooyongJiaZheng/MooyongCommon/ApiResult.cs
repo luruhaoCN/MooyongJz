@@ -34,7 +34,7 @@ namespace MooyongCommon
         /// <returns></returns>
         public ApiResult SetSuccessResult()
         {
-            Code = "0";
+            Code = "1";
             ResponseDatetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:fff");
             Success = true;
             ResultMessage = "Success";
@@ -48,7 +48,7 @@ namespace MooyongCommon
         /// <returns></returns>
         public ApiResult SetSuccessResult(string resultObject)
         {
-            Code = "0";
+            Code = "1";
             ResponseDatetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:fff");
             Success = true;
             ResultMessage = "Success";

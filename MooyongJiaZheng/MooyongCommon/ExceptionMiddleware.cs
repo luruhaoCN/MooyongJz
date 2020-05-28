@@ -38,12 +38,12 @@ namespace MooyongCommon
             string error;
             if (environment.IsDevelopment())
             {
-                var json = new { flag = "0", message = e.Message };
+                var json = new ApiResult().SetFailedResult("0",e.Message);
                 error = JsonConvert.SerializeObject(json);
             }
             else
             {
-                var json = new { flag = "0", message = "抱歉，出错了" };
+                var json = new ApiResult().SetFailedResult("0", "抱歉，出错了！");
                 error = JsonConvert.SerializeObject(json);
             }
             await context.Response.WriteAsync(error);

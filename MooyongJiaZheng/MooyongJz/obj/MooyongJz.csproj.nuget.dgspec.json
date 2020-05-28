@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[2.0.35, )"
             },
+            "DapperExtensions.NetCore": {
+              "target": "Package",
+              "version": "[2.0.7, )"
+            },
             "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -51,6 +55,14 @@
               "version": "[2.2.5, )"
             },
             "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[3.1.4, )"
             },
@@ -133,6 +145,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "DapperExtensions.NetCore": {
+              "target": "Package",
+              "version": "[2.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

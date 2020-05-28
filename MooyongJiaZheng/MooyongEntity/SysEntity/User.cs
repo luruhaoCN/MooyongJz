@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DapperExtensions.Mapper;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,5 +24,13 @@ namespace MooyongEntity.SysEntity
         public string Org_user { get; set; }
         public DateTime Org_date { get; set; }
         public string User_code { get; set; }
+    }
+    public class PersonMapper : ClassMapper<User>
+    {
+        public PersonMapper()
+        {
+            Table("t_sys_db_user");
+            AutoMap();
+        }
     }
 }

@@ -16,13 +16,6 @@ namespace MooyongJz.Controllers.SysController
     [ApiExplorerSettings(GroupName = "base")]
     public class UserController : ApiControllerBase
     {
-        private readonly DapperClient _mysql;
-
-        public UserController(IDapperFactory dapperFactory)
-        {
-            _mysql = dapperFactory.CreateClient("MySql");
-        }
-
         /// <summary>
         /// 获取用户列表
         /// </summary>
@@ -30,10 +23,13 @@ namespace MooyongJz.Controllers.SysController
         /// <returns></returns>
         [Route("GetList")]
         [HttpPost]
-        public List<User> GetList([FromBody]User user)
+        public ApiResult GetList([FromBody]User user)
         {
-            List<User> result = _mysql.Query<User>(@"select * from t_sys_user");
-            return result;
+            using DapperHelper helper = new DapperHelper();
+            List<User> result = helper.GetPage<User>();
+            ApiResult ret = new ApiResult().SetSuccessResult();
+            ret.ResultObject = result;
+            return ret;
         }
 
         /// <summary>
@@ -82,7 +78,7 @@ namespace MooyongJz.Controllers.SysController
         /// <returns></returns>
         [Route("Login")]
         [HttpPost]
-        public object Login(string user_code, string user_password, int deviceType = 0, string clientId = "")
+        public ApiResult Login(string user_code, string user_password, int deviceType = 0, string clientId = "")
         {
             if (string.IsNullOrEmpty(user_code))
                 throw new ArgumentException("用户名不能为空。", "user_code");
@@ -90,7 +86,8 @@ namespace MooyongJz.Controllers.SysController
             if (string.IsNullOrEmpty(user_password))
                 throw new ArgumentException("密码不能为空.", "user_password");
 
-            User nowUser = _mysql.QueryFirst<User>(@"select * from t_sys_user where user_code = '"+ user_code + "' or user_name = '"+user_code+"'");
+            using DapperHelper helper = new DapperHelper();
+            User nowUser = helper.QueryFirst<User>(@"select * from t_sys_user where user_code = '"+ user_code + "' or user_name = '"+user_code+"'");
             if (nowUser == null)
                 throw new ArgumentException("用户不存在或密码错误！");
 
@@ -108,8 +105,12 @@ namespace MooyongJz.Controllers.SysController
             {
                 passkey = ApiTools.StringToMD5Hash(nowUser.User_id + nowUser.User_code + DateTime.UtcNow + Guid.NewGuid());
             }
+#pragma warning disable CS8602 // 取消引用可能出现的空引用。
             nowUser.User_password = "";
-            return new { SessionKey = passkey, LogonUser = nowUser };
+#pragma warning restore CS8602 // 取消引用可能出现的空引用。
+            ApiResult ret = new ApiResult().SetSuccessResult();
+            ret.ResultObject = new { SessionKey = passkey, LogonUser = nowUser };
+            return ret;
         }
     }
 }

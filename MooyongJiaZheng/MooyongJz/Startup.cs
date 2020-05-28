@@ -1,20 +1,15 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MooyongCommon;
-using MooyongCommon.MyDB;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MooyongJz
@@ -44,12 +39,6 @@ namespace MooyongJz
         public void ConfigureServices(IServiceCollection services)
         {
             ApiLogger.Configure(); //使用前先配置
-            //连接MySql
-            services.AddDapper("MySql", m =>
-            {
-                m.ConnectionString = Configuration.GetConnectionString("DefaultConnection");
-                m.DbType = DbStoreType.MySql;
-            });
 
             //配置跨域处理
             services.AddCors(options =>
@@ -119,7 +108,9 @@ namespace MooyongJz
                 //设置SjiggJSON和UI的注释路径.
                 // 为 Swagger JSON and UI设置xml文档注释路径
                 var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+#pragma warning disable CS8604 // 可能的 null 引用参数。
                 var xmlPath = Path.Combine(basePath, "MooyongSwagger.xml");
+#pragma warning restore CS8604 // 可能的 null 引用参数。
                 //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
                 //var xmlmodelPath = Path.Combine(basePath, xmlFile);//添加model注释
                 //c.IncludeXmlComments(xmlmodelPath);
