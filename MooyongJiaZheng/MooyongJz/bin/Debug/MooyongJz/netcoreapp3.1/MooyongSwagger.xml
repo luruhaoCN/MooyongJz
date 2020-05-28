@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MooyongJz</name>
+    </assembly>
+    <members>
+        <member name="M:MooyongJz.Controllers.SysController.UserController.GetList(MooyongEntity.SysEntity.User)">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="user">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MooyongJz.Controllers.SysController.UserController.Add(MooyongEntity.SysEntity.User)">
+            <summary>
+            新增用户
+            </summary>
+            <param name="user">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MooyongJz.Controllers.SysController.UserController.Update(MooyongEntity.SysEntity.User)">
+            <summary>
+            修改用户
+            </summary>
+            <param name="user">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MooyongJz.Controllers.SysController.UserController.Delete(MooyongEntity.SysEntity.User)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="user">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MooyongJz.Controllers.SysController.UserController.Login(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            登录API （账号登陆）
+            </summary>
+            <param name="user_code">登录账号，可以是手机或者用户名、邮箱</param>
+            <param name="user_password">加密后的密码，这里避免明文，客户端加密后传到API端</param>
+            <param name="deviceType">客户端的设备类型</param>
+            <param name="clientId">客户端识别号, 一般在APP上会有一个客户端识别号</param>
+            <returns></returns>
+        </member>
+        <member name="T:MooyongJz.Startup">
+            <summary>
+            启动项目
+            </summary>
+        </member>
+        <member name="M:MooyongJz.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:MooyongJz.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MooyongJz.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:MooyongJz.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
