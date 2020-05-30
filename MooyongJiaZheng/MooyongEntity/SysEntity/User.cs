@@ -29,7 +29,7 @@ namespace MooyongEntity.SysEntity
     {
         public PersonMapper()
         {
-            Table("t_sys_db_user");
+            Table("t_sys_user");
             AutoMap();
         }
     }

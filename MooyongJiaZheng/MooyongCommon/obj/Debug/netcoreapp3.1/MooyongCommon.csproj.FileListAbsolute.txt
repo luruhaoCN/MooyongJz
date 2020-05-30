@@ -24,3 +24,11 @@ F:\NetCore\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.A
 F:\NetCore\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.dll
 F:\NetCore\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.pdb
 F:\NetCore\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.csproj.CoreCompileInputs.cache
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\bin\Debug\netcoreapp3.1\MooyongCommon.deps.json
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\bin\Debug\netcoreapp3.1\MooyongCommon.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\bin\Debug\netcoreapp3.1\MooyongCommon.pdb
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.AssemblyInfoInputs.cache
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.AssemblyInfo.cs
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.csproj.CoreCompileInputs.cache
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongCommon\obj\Debug\netcoreapp3.1\MooyongCommon.pdb

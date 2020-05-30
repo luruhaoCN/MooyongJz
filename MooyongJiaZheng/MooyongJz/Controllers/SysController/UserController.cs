@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using MooyongCommon;
 using MooyongCommon.MyDB;
 using MooyongEntity.SysEntity;
@@ -26,7 +27,7 @@ namespace MooyongJz.Controllers.SysController
         public ApiResult GetList([FromBody]User user)
         {
             using DapperHelper helper = new DapperHelper();
-            List<User> result = helper.GetPage<User>();
+            List<User> result = helper.GetAll<User>().AsList();
             ApiResult ret = new ApiResult().SetSuccessResult();
             ret.ResultObject = result;
             return ret;

@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NetCore\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj": {}
+    "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj": {}
   },
   "projects": {
-    "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj": {
+    "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj",
+        "projectUniqueName": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj",
         "projectName": "MooyongCommon",
-        "projectPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj",
+        "projectPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj",
         "packagesPath": "C:\\Users\\Hao\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\obj\\",
+        "outputPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "G:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Hao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -112,18 +117,23 @@
         }
       }
     },
-    "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj": {
+    "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj",
+        "projectUniqueName": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj",
         "projectName": "MooyongEntity",
-        "projectPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj",
+        "projectPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj",
         "packagesPath": "C:\\Users\\Hao\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\obj\\",
+        "outputPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "G:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Hao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -180,18 +190,23 @@
         }
       }
     },
-    "F:\\NetCore\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj": {
+    "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NetCore\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj",
+        "projectUniqueName": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj",
         "projectName": "MooyongJz",
-        "projectPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj",
+        "projectPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongJz\\MooyongJz.csproj",
         "packagesPath": "C:\\Users\\Hao\\.nuget\\packages\\",
-        "outputPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongJz\\obj\\",
+        "outputPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongJz\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "G:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Hao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -203,11 +218,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj": {
-                "projectPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj"
+              "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj": {
+                "projectPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongCommon\\MooyongCommon.csproj"
               },
-              "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj": {
-                "projectPath": "F:\\NetCore\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj"
+              "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj": {
+                "projectPath": "E:\\个人程序\\家政订单服务\\MooyongSource\\MooyongJiaZheng\\MooyongEntity\\MooyongEntity.csproj"
               }
             }
           }
