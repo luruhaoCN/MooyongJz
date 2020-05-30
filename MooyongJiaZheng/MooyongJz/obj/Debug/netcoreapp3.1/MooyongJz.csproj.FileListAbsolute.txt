@@ -179,9 +179,6 @@ F:\NetCore\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.genruntim
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.csprojAssemblyReference.cache
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.AssemblyInfoInputs.cache
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.AssemblyInfo.cs
-E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.csproj.CoreCompileInputs.cache
-E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cs
-E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cache
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\appsettings.Development.json
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\appsettings.json
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Properties\launchSettings.json
@@ -248,3 +245,13 @@ E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\D
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.dll
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.pdb
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.genruntimeconfig.cache
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.csproj.CoreCompileInputs.cache
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cs
+E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cache

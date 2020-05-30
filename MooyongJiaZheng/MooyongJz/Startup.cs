@@ -2,12 +2,15 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MooyongCommon;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -39,6 +42,7 @@ namespace MooyongJz
         public void ConfigureServices(IServiceCollection services)
         {
             ApiLogger.Configure(); //使用前先配置
+            ApiAuthentication.Authentication();//加载token配置
 
             //配置跨域处理
             services.AddCors(options =>
@@ -88,8 +92,10 @@ namespace MooyongJz
                 {
                     Description = "请输入带有Bearer开头的Token",
                     Name = "Authorization",
-                    In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
                 });
                 //认证方式，此方式为全局添加
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -108,9 +114,7 @@ namespace MooyongJz
                 //设置SjiggJSON和UI的注释路径.
                 // 为 Swagger JSON and UI设置xml文档注释路径
                 var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
-#pragma warning disable CS8604 // 可能的 null 引用参数。
                 var xmlPath = Path.Combine(basePath, "MooyongSwagger.xml");
-#pragma warning restore CS8604 // 可能的 null 引用参数。
                 //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
                 //var xmlmodelPath = Path.Combine(basePath, xmlFile);//添加model注释
                 //c.IncludeXmlComments(xmlmodelPath);
@@ -124,7 +128,22 @@ namespace MooyongJz
                     //设置日期返回格式
                     configure.JsonSerializerOptions.Converters.Add(new DatetimeJsonConverter());
                 });
-
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(option =>
+                {
+                    option.RequireHttpsMetadata = false;
+                    option.SaveToken = true;
+                    var token = Configuration.GetSection("tokenParameter").Get<TokenParameter>();
+                    option.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(token.Secret)),
+                        ValidIssuer = token.Issuer,
+                        ValidateIssuer = true,
+                        ValidateAudience = false,
+                        ClockSkew = TimeSpan.Zero,/*token过期时钟偏差，默认是5分钟*/
+                    };
+                });
             services.AddMvc();
         }
 
@@ -144,6 +163,8 @@ namespace MooyongJz
 
             app.UseRouting();
 
+            //增加认证服务
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

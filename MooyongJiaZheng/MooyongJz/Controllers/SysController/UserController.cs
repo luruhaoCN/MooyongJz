@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MooyongCommon;
 using MooyongCommon.MyDB;
@@ -24,6 +25,7 @@ namespace MooyongJz.Controllers.SysController
         /// <returns></returns>
         [Route("GetList")]
         [HttpPost]
+        [Authorize(Roles = "testUser")]
         public ApiResult GetList([FromBody]User user)
         {
             using DapperHelper helper = new DapperHelper();
@@ -102,15 +104,20 @@ namespace MooyongJz.Controllers.SysController
             if (nowUser.Is_enable != "1")
                 throw new ArgumentException("用户已失效！");
             string passkey = "";
+            ApiResult ret = new ApiResult().SetSuccessResult();
             if (nowUser != null)
             {
                 passkey = ApiTools.StringToMD5Hash(nowUser.User_id + nowUser.User_code + DateTime.UtcNow + Guid.NewGuid());
+                //生成Token
+                var token = ApiAuthentication.GenUserToken(nowUser.User_name,"testUser");
+                var refreshToken = "123456123456123456";
+                nowUser.User_password = "";
+                ret.ResultObject = new {Token = token, RefreshToken = refreshToken, SessionKey = passkey, LogonUser = nowUser };
             }
-#pragma warning disable CS8602 // 取消引用可能出现的空引用。
-            nowUser.User_password = "";
-#pragma warning restore CS8602 // 取消引用可能出现的空引用。
-            ApiResult ret = new ApiResult().SetSuccessResult();
-            ret.ResultObject = new { SessionKey = passkey, LogonUser = nowUser };
+            else
+            {
+                ret = new ApiResult().SetFailedResult("-1","获取用户数据失败！");
+            }
             return ret;
         }
     }
