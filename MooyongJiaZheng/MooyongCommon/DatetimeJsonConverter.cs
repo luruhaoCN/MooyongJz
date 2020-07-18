@@ -12,8 +12,15 @@ namespace MooyongCommon
         {
             if (reader.TokenType == JsonTokenType.String)
             {
-                if (DateTime.TryParse(reader.GetString(), out DateTime date))
-                    return date;
+                if (reader.GetString().Trim() != "")
+                {
+                    if (DateTime.TryParse(reader.GetString(), out DateTime date))
+                        return date;
+                }
+                else
+                {
+                    return new DateTime();
+                }
             }
             return reader.GetDateTime();
         }

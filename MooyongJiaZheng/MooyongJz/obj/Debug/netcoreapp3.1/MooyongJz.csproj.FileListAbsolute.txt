@@ -255,3 +255,11 @@ E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\bin\D
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.csproj.CoreCompileInputs.cache
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cs
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cache
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\bin\Debug\MooyongJz\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\NetCore\MooyongJiaZheng\MooyongJz\obj\Debug\netcoreapp3.1\MooyongJz.MvcApplicationPartsAssemblyInfo.cs

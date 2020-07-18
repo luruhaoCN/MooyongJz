@@ -44,6 +44,8 @@ namespace MooyongJz.Controllers.SysController
         [HttpPost]
         public ApiResult Add([FromBody] User user)
         {
+            using DapperHelper helper = new DapperHelper();
+            var result = helper.Insert<User>(user);
             return new ApiResult().SetSuccessResult();
         }
 
@@ -56,7 +58,9 @@ namespace MooyongJz.Controllers.SysController
         [HttpPost]
         public ApiResult Update([FromBody] User user)
         {
-            return new ApiResult();
+            using DapperHelper helper = new DapperHelper();
+            var result = helper.Update<User>(user);
+            return new ApiResult().SetSuccessResult();
         }
 
         /// <summary>
