@@ -111,7 +111,7 @@ namespace MooyongJz.Controllers.SysController
             ApiResult ret = new ApiResult().SetSuccessResult();
             if (nowUser != null)
             {
-                passkey = ApiTools.StringToMD5Hash(nowUser.User_id + nowUser.User_code + DateTime.UtcNow + Guid.NewGuid());
+                passkey = ApiTools.StringToMD5Hash(nowUser.User_id + nowUser.User_name + DateTime.UtcNow + Guid.NewGuid());
                 //生成Token
                 var token = ApiAuthentication.GenUserToken(nowUser.User_name,"testUser");
                 var refreshToken = "123456123456123456";

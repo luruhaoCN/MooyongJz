@@ -33,4 +33,3 @@ E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongEntity\o
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongEntity\obj\Debug\netcoreapp3.1\MooyongEntity.dll
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongEntity\obj\Debug\netcoreapp3.1\MooyongEntity.pdb
 E:\个人程序\家政订单服务\MooyongSource\MooyongJiaZheng\MooyongEntity\obj\Debug\netcoreapp3.1\MooyongEntity.csprojAssemblyReference.cache
-F:\NetCore\MooyongJiaZheng\MooyongEntity\obj\Debug\netcoreapp3.1\MooyongEntity.csprojAssemblyReference.cache
